@@ -226,4 +226,19 @@ footer p:hover {
     transition: 0.3s ease;
 }
 
+.intro-container {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;    /* Center horizontally */
+    gap: 15px;                /* space between image and text */
+    margin-bottom: 20px;      /* Space between text and link */
+}
+
+.profile-pic {
+    width: 150px;              /* adjust photo size */
+    height: 150px;
+    /*border-radius: 100%;       /* makes the photo circular */
+    object-fit: cover;        /* crops it nicely */
+    border: none; /*3px solid #fff;   /* optional border */
+}
 
