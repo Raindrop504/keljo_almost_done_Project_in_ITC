@@ -268,8 +268,69 @@ footer p:hover {
         font-size: 14px;        /* smaller link text */
     }
 }
+
+/* HIDE CHECKBOX */
+#menu-toggle {
+    display: none;
+}
+
+/* 3-DOT MENU BUTTON */
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.menu-btn span {
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+}
+
+/* DESKTOP — unchanged */
+@media (min-width: 769px) {
+    nav ul {
+        display: flex;
+    }
+}
+
+/* MOBILE MENU */
+@media (max-width: 768px) {
+
+    /* Show the 3 dots */
+    .menu-btn {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 100%;
+        background: #0F172A;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 15px 0;
+        display: none; /* hidden until clicked */
+        border-bottom: 1px solid #1E293B;
+    }
+
+    /* When checkbox is checked → show menu */
+    #menu-toggle:checked ~ nav ul {
+        display: flex;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
         
         
 
     
       
+
