@@ -242,33 +242,6 @@ footer p:hover {
     border: none; /*3px solid #fff;   /* optional border */
 }
 
-
-/* MAKE MOBILE HEADER LOOK EXACTLY LIKE DESKTOP (but scaled) */
-@media (max-width: 768px) {
-
-    header {
-        padding: 12px 15px;     /* smaller padding */
-        flex-direction: row;    /* keep logo & nav in one line */
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header h1 {
-        font-size: 18px;        /* smaller logo text */
-        white-space: nowrap;    /* prevents breaking into 2 lines */
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: row;    /* keep items horizontal */
-        gap: 15px;              /* tighter spacing to fit */
-    }
-
-    nav ul li a {
-        font-size: 14px;        /* smaller link text */
-    }
-}
-
 /* HIDE CHECKBOX */
 #menu-toggle {
     display: none;
@@ -333,4 +306,5 @@ footer p:hover {
 
     
       
+
 
