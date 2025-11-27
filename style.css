@@ -235,11 +235,12 @@ footer p:hover {
 }
 
 .profile-pic {
-    width: 160px;              /* adjust photo size */
-    height: 160px;
+    width: 180px;              /* adjust photo size */
+    height: 180px;
     /*border-radius: 100%;       /* makes the photo circular */
     object-fit: cover;        /* crops it nicely */
     border: none; /*3px solid #fff;   /* optional border */
 }
+
 
 
